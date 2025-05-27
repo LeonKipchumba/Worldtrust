@@ -1,4 +1,4 @@
- Banking App
+     Banking App
 A simple Python command-line application that allows users to:
 
 Create a bank account
