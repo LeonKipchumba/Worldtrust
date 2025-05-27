@@ -14,10 +14,10 @@ Python 3.8+
 pipenv
 
 Installation & Run
-bash
-Copy
-Edit
-pipenv install
+bash ||
+Copy ||
+Edit ||
+pipenv install ||
 pipenv run python3 -m banking_app.main
 
 📁 Features
