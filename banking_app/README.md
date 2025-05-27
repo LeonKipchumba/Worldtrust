@@ -1,71 +1,60 @@
-# Banking App
+# Banking App CLI
 
 ## Overview
-The Banking App is a command-line interface (CLI) application that allows users to manage their accounts, including creating accounts, depositing funds, and withdrawing funds. The application uses SQLAlchemy ORM for database management and Pipenv for dependency management.
+This is a command-line banking application written in Python. It allows users to create accounts, deposit funds, and withdraw funds, all managed through a simple interactive menu. The app uses SQLAlchemy ORM for database management and follows best practices for Python CLI projects.
 
 ## Features
 - User account creation
 - Deposit funds to user accounts
 - Withdraw funds from user accounts
-- Balance management
+- Persistent storage using SQLite and SQLAlchemy ORM
+- Interactive menu navigation (no need to remember commands)
+- Well-structured Python package
+- Virtual environment managed with Pipenv
 
 ## Project Structure
 ```
-banking_app
-├── app
-│   ├── __init__.py          # Initializes the application package
-│   ├── cli.py               # CLI logic for user account management
-│   ├── models.py            # SQLAlchemy ORM models
-│   ├── database.py          # Database connection and session management
-│   └── utils.py             # Utility functions for the application
-├── tests
-│   └── test_app.py          # Unit tests for the application
-├── Pipfile                   # Project dependencies
-├── Pipfile.lock              # Locked dependencies for consistent installations
-├── README.md                 # Documentation for the project
-└── main.py                   # Entry point for the application
+banking_app/
+├── app/
+│   ├── __init__.py        # Main entry and menu loop
+│   ├── cli.py             # CLI logic and menu
+│   ├── database.py        # Database connection/session
+│   ├── models.py          # SQLAlchemy ORM models
+│   └── utils.py           # Utility functions
+├── tests/
+│   └── test_app.py        # Unit tests
+├── main.py                # Entry point for the app
+├── Pipfile                # Pipenv dependencies
+├── Pipfile.lock           # Locked dependencies
+├── README.md              # Project documentation
+└── LICENSE                # License file
 ```
 
 ## Setup Instructions
-1. Clone the repository:
-   ```
+1. **Clone the repository:**
+   ```bash
    git clone <repository-url>
    cd banking_app
    ```
-
-2. Install dependencies using Pipenv:
-   ```
+2. **Install dependencies using Pipenv:**
+   ```bash
    pipenv install
    ```
-
-3. Activate the virtual environment:
-   ```
+3. **Activate the virtual environment:**
+   ```bash
    pipenv shell
    ```
-
-4. Run the application:
-   ```
+4. **Run the application:**
+   ```bash
    python main.py
    ```
 
 ## Usage
-- To create a new user account, use the command:
-  ```
-  python main.py create_account <username>
-  ```
-
-- To deposit funds, use the command:
-  ```
-  python main.py deposit <username> <amount>
-  ```
-
-- To withdraw funds, use the command:
-  ```
-  python main.py withdraw <username> <amount>
-  ```
+- Follow the on-screen menu to create accounts, deposit, or withdraw funds.
+- All data is stored in a local SQLite database (`banking_app.db`).
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the LICENSE file for details.
