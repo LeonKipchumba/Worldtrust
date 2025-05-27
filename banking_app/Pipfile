@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+
+[packages]
+flask = "*"
+flask_sqlalchemy = "*"
+click = "*"
+pipenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

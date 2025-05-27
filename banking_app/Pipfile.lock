@@ -1,0 +1,32 @@
+{
+    "_meta": {
+        "hash": {
+            "alg": "sha256",
+            "content": "f4c8b9c1c1b8c3b3c3b3c3b3c3b3c3b3c3b3c3b3c3b3c3b3c3b3c3b3c3b3c3"
+        },
+        "version": "1.0"
+    },
+    "default": {
+        "requests": {
+            "version": "2.25.1",
+            "hashes": [
+                "sha256:2c6ee24b09816a6f14f95d1698b24ead8c6f2e8c8e8c8e8c8e8c8e8c8e8c8e8",
+                "sha256:3c6ee24b09816a6f14f95d1698b24ead8c6f2e8c8e8c8e8c8e8c8e8c8e8c8e8"
+            ]
+        },
+        "SQLAlchemy": {
+            "version": "1.4.22",
+            "hashes": [
+                "sha256:4c6ee24b09816a6f14f95d1698b24ead8c6f2e8c8e8c8e8c8e8c8e8c8e8c8e8",
+                "sha256:5c6ee24b09816a6f14f95d1698b24ead8c6f2e8c8e8c8e8c8e8c8e8c8e8c8e8"
+            ]
+        },
+        "click": {
+            "version": "8.0.1",
+            "hashes": [
+                "sha256:6c6ee24b09816a6f14f95d1698b24ead8c6f2e8c8e8c8e8c8e8c8e8c8e8c8e8",
+                "sha256:7c6ee24b09816a6f14f95d1698b24ead8c6f2e8c8e8c8e8c8e8c8e8c8e8c8e8"
+            ]
+        }
+    }
+}
