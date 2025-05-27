@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from sqlalchemypipenv  import sessionmaker, declarative_base
+from sqlalchemy.orm import sessionmaker, declarative_base
 
 DATABASE_URL = "sqlite:///banking_app.db"  # Change this to your desired database URL
 
